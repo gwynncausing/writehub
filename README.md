@@ -95,3 +95,13 @@
 1. `cd backend`
 2. `npm install`
 3. `npm run start`
+
+# Sample User Credentials
+
+## Writer
+username: writer1
+password: password123
+
+## Editor
+username: editor1
+password: password123
