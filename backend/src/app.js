@@ -1,5 +1,6 @@
 // app.js
 const express = require('express');
+const serverless = require('serverless-http')
 const authRoutes = require('./routes/auth');
 const articleRoutes = require('./routes/articles');
 const userRoutes = require('./routes/users');
@@ -28,3 +29,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+
+module.exports.handler = serverless(app)

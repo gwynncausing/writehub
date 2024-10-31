@@ -29,7 +29,12 @@
     <v-card-actions>
       <v-btn v-if="props.data.status !== 'Published'" color="orange" text="Edit" :to="`article/${props.data.id}`"></v-btn>
 
-      <v-btn v-if="role === 'editor'" color="orange" text="Publish"></v-btn>
+      <v-btn 
+        v-if="role === 'editor'" 
+        color="orange" 
+        text="Publish"
+        @click="onPublish"
+      ></v-btn>
       
       <div class="bg-light-blue px-3 py-1 ml-auto" v-if="showStatus">{{ props.data.status }}</div>
     </v-card-actions>
@@ -54,6 +59,10 @@ onMounted(async () => {
   user.value = authStore.user
   role.value = user.value.type
 });
+
+const onPublish = () => {
+  
+}
 </script>
 
 <style lang="scss" scoped>
