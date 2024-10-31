@@ -82,3 +82,16 @@
             * show all articles being created in tabular display and must show the following columns: 
             actions (includes the edit action), image (thumbnail), title, link, writer, editor, status 
 
+
+
+# Running the App
+## Frontend
+
+1. `cd frontend` 
+2. `npm install`
+3. `npm run dev`
+
+## Backend
+1. `cd backend`
+2. `npm install`
+3. `npm run start`
