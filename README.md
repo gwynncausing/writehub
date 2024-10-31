@@ -1,6 +1,3 @@
-# ai-fe-exam
-Archintel Developer Exam
-
 ## Specifications
 - Develop a Writer/Editor Dashboard Site that has the ablity to create, edit, and publish an article related to a company. 
 - Should implement web responsive front-end application using Vue.js.
@@ -8,16 +5,6 @@ Archintel Developer Exam
 - Able to demonstrate backend server (or a mockup server) connected to front-end app. Can use any programming language.
 - Should implement a login function for both writer and editor users
 - Adding of users will be done by the editor
-
-## Scoring
-- Implemented functionalities
-- Implementation of HTML, CSS and Javascript 
-- Implementation of Backend server or Mockup Server
-
-## Must Have Output (IMPORTANT! Failure to provide one or more items means incomplete output)
- 1. Live link - url of your deployed output. 
- 2. Project files - (both front-end and back-end or mockup server) your source code, it could be uploaded in github or bitbucket (must be set to public in order to access) and must provide a readme file with instructions on how to run your output
- 3. PROVIDE SAMPLE CREDENTIALS for both writer user and editor user logins. 
 
 ## Database 
 * Company
