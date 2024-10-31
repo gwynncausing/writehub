@@ -57,6 +57,7 @@ onMounted(async () => {
 });
 
 watch(tab, async () => {
+  articles.value = []
   if(tab.value === 'overview') {
     articles.value = await articleStore.getAllArticle();
   }

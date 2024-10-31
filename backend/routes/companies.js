@@ -38,7 +38,6 @@ router.get('/:id', authenticateToken, (req, res) => {
 router.post('/', authenticateToken, upload.single('logo'), (req, res) => {
   const { name, status } = req.body;
   const logoPath = req.file ? req.file.path : null;
-  console.log("🚀 ~ router.post ~ req.file:", req.file)
 
   db.run(
     `INSERT INTO companies (logo, name, status) VALUES (?, ?, ?)`,

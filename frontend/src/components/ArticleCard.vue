@@ -27,7 +27,7 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn v-if="props.data.status !== 'Published'" color="orange" text="Edit"></v-btn>
+      <v-btn v-if="props.data.status !== 'Published'" color="orange" text="Edit" :to="`article/${props.data.id}`"></v-btn>
 
       <v-btn v-if="role === 'editor'" color="orange" text="Publish"></v-btn>
       

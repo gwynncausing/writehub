@@ -61,11 +61,9 @@ const onSubmit = async () => {
 
   if(props.isUpdate) {
     const localCompany = reactive({ ...toRefs(company) });;
-    console.log("🚀 ~ onSubmit ~ localCompany:", localCompany.logo)
     if(!localCompany.logo) {
       localCompany.logo = null
     }
-    console.log("🚀 ~ onSubmit ~ localCompany:", localCompany)
     const formData = createFormData(localCompany)
     await companyStore.updateCompany(localCompany.id, formData)
   }
